@@ -90,8 +90,8 @@ colnames(merged_test_train_sub)<-gsub("tBody", "Body", colnames(merged_test_trai
 ## summarize the data by the means of the variables - went with the tidy wide
 summarized_tidy<-summarize_all(group_by(merged_test_train_sub, subject, activity), mean)
 
-## write the data to a space separate text file
-write.table(summarized_tidy, paste(output_location, "tidy_output.txt", sep=""), sep=" ", eol = "\n") 
+## write the data to a space separate text file with no row names
+write.table(summarized_tidy, paste(output_location, "tidy_output.txt", sep=""), sep=" ", row.names=FALSE, eol = "\n") 
 
 
 
