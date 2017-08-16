@@ -2,7 +2,7 @@
 
 ## Getting and Cleaning Data Assginment
 
-This repository conaints the peer-reviwed assignment for the above course.  The 
+This repository contains the peer-reviwed assignment for the above course.  The 
 
 
 There are four files in this repository:
