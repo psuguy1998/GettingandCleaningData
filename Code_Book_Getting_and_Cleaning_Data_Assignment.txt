@@ -1,0 +1,144 @@
+Code Book for Getting and Cleaning Data Assignment (tidy_output.txt)
+
+Summarized subset of Human Activity Recognition Using Smartphones Dataset Version 1.0
+
+www.smartlab.ws
+Fuller description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+Source data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Subsetted to include only those variables measuring Mean or Std.  Please see README for further details of analysis.
+
+Variables names have been updated to make more readable.
+
+Tidy data wide format
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals TimeAccXYZ and TimeGyroXYZ. 
+These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order 
+low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated 
+into body and gravity acceleration signals (TimeBodyAccXYZ and TimeGravityAccXYZ) using another low pass Butterworth filter with a 
+corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (TimeBodyAccJerkXYZ and 
+TimeBodyGyroJerkXYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TimeBodyAccMag,
+TimeGravityAccMag, TimeBodyAccJerkMag, TimeBodyGyroMag, TimeBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FreqBodyAcc-XYZ, FreqBodyAccJerk-XYZ, FreqBodyGyro-XYZ, 
+FreqBodyAccJerkMag, FreqBodyGyroMag, FreqBodyGyroJerkMag. 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+
+
+TimeBodyAcc-XYZ
+TimeGravityAcc-XYZ
+TimeBodyAccJerk-XYZ
+TimeBodyGyro-XYZ
+TimeBodyGyroJerk-XYZ
+TimeBodyAccMag
+TimeGravityAccMag
+TimeBodyAccJerkMag
+TimeBodyGyroMag
+TimeBodyGyroJerkMag
+FreqBodyAcc-XYZ
+FreqBodyAccJerk-XYZ
+FreqBodyGyro-XYZ
+FreqBodyAccMag
+FreqBodyAccJerkMag
+FreqBodyGyroMag
+FreqBodyGyroJerkMag
+
+
+mean: Mean value
+std: Standard deviation
+angle(): Angle between two vectors.
+
+
+ $ subject                            : int  Unique identifier of the subject
+ $ activity                           : chr  one of six strings describing the activity during the test "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"
+ $ TimeBodyAccMeanX                   : num  Remaining variables are mean of the subject-activity pair - normalized and bounded by -1 to 1
+ $ TimeBodyAccMeanY                   : num  
+ $ TimeBodyAccMeanZ                   : num  
+ $ TimeBodyAccStdX                    : num  
+ $ TimeBodyAccStdY                    : num  
+ $ TimeBodyAccStdZ                    : num  
+ $ TimeGravityAccMeanX                : num  
+ $ TimeGravityAccMeanY                : num  
+ $ TimeGravityAccMeanZ                : num  
+ $ TimeGravityAccStdX                 : num  Note: even variables with Std are the Mean of the Std
+ $ TimeGravityAccStdY                 : num  
+ $ TimeGravityAccStdZ                 : num  
+ $ TimeBodyAccJerkMeanX               : num  
+ $ TimeBodyAccJerkMeanY               : num  
+ $ TimeBodyAccJerkMeanZ               : num  
+ $ TimeBodyAccJerkStdX                : num  
+ $ TimeBodyAccJerkStdY                : num  
+ $ TimeBodyAccJerkStdZ                : num  
+ $ TimeBodyGyroMeanX                  : num  
+ $ TimeBodyGyroMeanY                  : num  
+ $ TimeBodyGyroMeanZ                  : num  
+ $ TimeBodyGyroStdX                   : num  
+ $ TimeBodyGyroStdY                   : num  
+ $ TimeBodyGyroStdZ                   : num  
+ $ TimeBodyGyroJerkMeanX              : num  
+ $ TimeBodyGyroJerkMeanY              : num  
+ $ TimeBodyGyroJerkMeanZ              : num  
+ $ TimeBodyGyroJerkStdX               : num  
+ $ TimeBodyGyroJerkStdY               : num  
+ $ TimeBodyGyroJerkStdZ               : num 
+ $ TimeBodyAccMagMean                 : num  
+ $ TimeBodyAccMagStd                  : num  
+ $ TimeGravityAccMagMean              : num  
+ $ TimeGravityAccMagStd               : num  
+ $ TimeBodyAccJerkMagMean             : num  
+ $ TimeBodyAccJerkMagStd              : num  
+ $ TimeBodyGyroMagMean                : num  
+ $ TimeBodyGyroMagStd                 : num  
+ $ TimeBodyGyroJerkMagMean            : num  
+ $ TimeBodyGyroJerkMagStd             : num  
+ $ FreqBodyAccMeanX                   : num  
+ $ FreqBodyAccMeanY                   : num  
+ $ FreqBodyAccMeanZ                   : num  
+ $ FreqBodyAccStdX                    : num  
+ $ FreqBodyAccStdY                    : num  
+ $ FreqBodyAccStdZ                    : num  
+ $ FreqBodyAccMeanFreqX               : num  
+ $ FreqBodyAccMeanFreqY               : num  
+ $ FreqBodyAccMeanFreqZ               : num  
+ $ FreqBodyAccJerkMeanX               : num  
+ $ FreqBodyAccJerkMeanY               : num  
+ $ FreqBodyAccJerkMeanZ               : num  
+ $ FreqBodyAccJerkStdX                : num  
+ $ FreqBodyAccJerkStdY                : num  
+ $ FreqBodyAccJerkStdZ                : num  
+ $ FreqBodyAccJerkMeanFreqX           : num  
+ $ FreqBodyAccJerkMeanFreqY           : num  
+ $ FreqBodyAccJerkMeanFreqZ           : num  
+ $ FreqBodyGyroMeanX                  : num 
+ $ FreqBodyGyroMeanY                  : num  
+ $ FreqBodyGyroMeanZ                  : num  
+ $ FreqBodyGyroStdX                   : num  
+ $ FreqBodyGyroStdY                   : num  
+ $ FreqBodyGyroStdZ                   : num  
+ $ FreqBodyGyroMeanFreqX              : num  
+ $ FreqBodyGyroMeanFreqY              : num  
+ $ FreqBodyGyroMeanFreqZ              : num  
+ $ FreqBodyAccMagMean                 : num  
+ $ FreqBodyAccMagStd                  : num  
+ $ FreqBodyAccMagMeanFreq             : num  
+ $ FreqBodyBodyAccJerkMagMean         : num  
+ $ FreqBodyBodyAccJerkMagStd          : num  
+ $ FreqBodyBodyAccJerkMagMeanFreq     : num  
+ $ FreqBodyBodyGyroMagMean            : num  
+ $ FreqBodyBodyGyroMagStd             : num  
+ $ FreqBodyBodyGyroMagMeanFreq        : num  
+ $ FreqBodyBodyGyroJerkMagMean        : num  
+ $ FreqBodyBodyGyroJerkMagStd         : num  
+ $ FreqBodyBodyGyroJerkMagMeanFreq    : num  
+ $ angle(BodyAccMean,gravity)         : num  
+ $ angle(BodyAccJerkMean),gravityMean): num  
+ $ angle(BodyGyroMean,gravityMean)    : num  
+ $ angle(BodyGyroJerkMean,gravityMean): num  
+ $ angle(X,gravityMean)               : num  
+ $ angle(Y,gravityMean)               : num  
+ $ angle(Z,gravityMean)               : num  
