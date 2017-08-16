@@ -2,8 +2,7 @@
 
 ## Getting and Cleaning Data Assignment 
 
-This repository contains the peer-reviewed assignment for the above course.  The 
-
+This repository contains the peer-reviewed assignment for the above course.  
 
 There are four files in this repository:
 
