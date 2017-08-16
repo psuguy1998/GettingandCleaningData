@@ -1,8 +1,8 @@
 # README.md
 
-## Getting and Cleaning Data Assginment
+## Getting and Cleaning Data Assignment 
 
-This repository contains the peer-reviwed assignment for the above course.  The 
+This repository contains the peer-reviewed assignment for the above course.  The 
 
 
 There are four files in this repository:
@@ -18,7 +18,7 @@ The original data for this analysis (Human Activity Recognition Using Smartphone
 Further information about the experiment is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
 ## ORIGINAL SOURCE FILE LOCATION: 
-In the script, there are variable names for the locations of the data files and output file, so the original data can be please where convient
+In the script, there are variable names for the locations of the data files and output file, so the original data can be placed where convient
 
 ## SCRIPT:
 The script takes 8 files from the original source files:
@@ -62,6 +62,7 @@ For each record it is provided:
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
+
 
 
 
